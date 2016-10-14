@@ -1,0 +1,25 @@
+{
+  "name": "hash",
+  "author": "Markus Dangl <sky@q1cc.net>",
+  "version": "0.1.0",
+  "description": "Hashing, HashMap, LinkedHashMap (Node, ES6)",
+  "keywords": [
+    "hash",
+    "hashmap",
+    "linkedhashmap",
+    "map",
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xicesky/node_hashmap",
+  "bugs": "https://github.com/xicesky/node_hashmap/issues",
+  "repository": "https://github.com/xicesky/node_hashmap",
+  "main": "./Hash.js",
+  "scripts": {
+  },
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+  }
+}
