@@ -16,6 +16,7 @@ describe("Hash()", function() {
     });
     it("should work as a constructor without arguments", function() {
         var hh = new Hash();
+        expect(hh).to.be.a('function');
         expect(hh(1)).to.equal(Hash.hash(1));
     });
 });
