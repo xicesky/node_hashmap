@@ -16,7 +16,7 @@
   "main": "./Hash.js",
   "scripts": {
     "test": "mocha test/",
-    "precommit": "jshint Hash.js",
+    "precommit": "jshint src/ lib/ test/",
     "prepush": "npm test"
   },
   "engines": {
