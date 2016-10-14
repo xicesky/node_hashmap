@@ -31,29 +31,30 @@ describe("LinkedHashMap", function() {
 
         expect(h1).to.not.equal(h2);
     });
+    it("should give the same hash after adding/reordering/removing entries", function() {
+        var m = new LinkedHashMap();
+        m.put("first",1);
+        m.put("second",2);
+        m.put("third",3);
+        var h1 = Hash(m);
+
+        m.insertAfter("second", "new", 2134);
+        var hx1 = Hash(m);
+
+        m.reorder("first", "new");
+        var hx2 = Hash(m);
+
+        m.remove("new");
+        var h2 = Hash(m);
+
+        expect(h1).to.not.equal(hx1);
+        expect(hx1).to.not.equal(hx2);
+        expect(hx2).to.not.equal(h2);
+        expect(h2).to.equal(h1);
+    });
 });
 
 /*
-var m = new LinkedHashMap();
-console.log(Hash.hash(m));
-m.put("a",2);
-console.log(Hash.hash(m));
-m.put(Hash.hash("a"),3);
-/**/
-
-/*
-console.log("-------------------------------------------------------------------------------");
-console.log(m.vs);
-console.log(Hash.hash(m));
-
-console.log("-------------------------------------------------------------------------------");
-m = new LinkedHashMap();
-m.put(Hash.hash("a"),3);
-m.put("a",2);
-console.log(m.vs);
-console.log(Hash.hash(m));
-/**/
-
 /*
 console.log("-------------------------------------------------------------------------------");
 var m = new LinkedHashMap();
