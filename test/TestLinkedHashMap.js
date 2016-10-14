@@ -53,29 +53,3 @@ describe("LinkedHashMap", function() {
         expect(h2).to.equal(h1);
     });
 });
-
-/*
-/*
-console.log("-------------------------------------------------------------------------------");
-var m = new LinkedHashMap();
-m.put("first",1);
-m.put("second",2);
-m.put("third",3);
-console.log(m.length, m.hash(), m.vs);
-m.iterateKV(function(kv){console.log(kv.k, kv.v);});
-/**/
-
-/*
-console.log("-------------------------------------------------------------------------------");
-m.insertAfter("second","new",2134);
-console.log(m.length, m.hash(), m.vs);
-m.iterateKV(function(kv){console.log(kv.k, kv.v);});
-console.log("-------------------------------------------------------------------------------");
-m.reorder("first", "new");
-console.log(m.length, m.hash(), m.vs);
-m.iterateKV(function(kv){console.log(kv.k, kv.v);});
-console.log("-------------------------------------------------------------------------------");
-m.remove("new");
-console.log(m.length, m.hash(), m.vs);
-m.iterateKV(function(kv){console.log(kv.k, kv.v);});
-/**/
