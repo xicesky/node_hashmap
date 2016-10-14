@@ -13,8 +13,9 @@
   "homepage": "https://github.com/xicesky/node_hashmap",
   "bugs": "https://github.com/xicesky/node_hashmap/issues",
   "repository": "https://github.com/xicesky/node_hashmap",
-  "main": "./Hash.js",
+  "main": "./lib/All.js",
   "scripts": {
+    "start": "node src/Demo.js",
     "test": "mocha test/",
     "precommit": "jshint src/ lib/ test/",
     "prepush": "npm test"
